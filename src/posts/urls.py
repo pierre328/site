@@ -1,0 +1,15 @@
+from django.urls import path
+from  .views import BlogHome,BlogPostCreate,BlogPostUpdate,BlogPostDetail,BlogPostDelete
+from django.conf.urls.static import static
+from blog import settings
+
+app_name = "posts"
+
+urlpatterns =[
+    path('', BlogHome.as_view(), name="home"),
+    path('create/', BlogPostCreate.as_view(), name="create"),
+    path('<str:slug>/', BlogPostDetail.as_view(), name='post'),
+
+    path('edit/<str:slug>/', BlogPostUpdate.as_view(), name='edit'),
+    path('delete/<str:slug>/', BlogPostDelete.as_view(), name='delete'),
+]

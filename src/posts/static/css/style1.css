@@ -1,0 +1,13 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+body{  background-image:  url("route.jpg");
+        background-position: center top 120px;
+        background-repeat: no-repeat;
+        background-size:   800px  ;
+        color: brown;
+        font-size: 150%;
+        text-align : center;
+
+        }
+        h1{font-size: 100%:}
+        h4{font-size: 80%;}
